@@ -1,0 +1,8 @@
+hm jab chaenge ki jab bhi hamra component render ho kuch ho kya ho jaise ki data fetch ho or database se nikal kar ya local storage 
+se data nikal aa jaye 
+Case1: run on every render
+useEffect(()=>{
+    alert("hel i will run on every render)
+})
+CASE2: Run only on first render
+CASE3: Run only when certain value change 

@@ -1,0 +1,17 @@
+hooks ke through data value update hoti hain UI updation ko react control karta hain 
+############virtual DOM######################
+createroot jo main.JSX mai wo ek dom like tree genrate karata hain kyunki yeh main dom or apne dom ko compare karta hain
+unhi chijo ko update karat hain JO UI mai update huwi hain 
+virtual dom mai pure ke pure dom ko track kar sakte ho or jo jo value change huwi usko dom se nikal ke usko wapas laga do 
+summay : javascript apna ek virtual dom rakhta hain usme chijo ko update karta hain 
+
+/** @type {import('tailwindcss').Config} */
+export const content = [
+  './pages/**/*.{html,js}',
+  './components/**/*.{html,js}',
+];
+export const theme = {
+  extend: {},
+};
+export const plugins = [];
+

@@ -1,0 +1,10 @@
+Map method
+purpose : render the list from array data
+JSX elements : tranfrom array items into JSX 
+inline rendering : direct inside the JSX 
+{item.map(item=><li key ={item.id}>{item.name}</li>)}
+
+
+### Conditional rendering
+displaying the content based on certain Conditions
+Allows for dynamic user interface 

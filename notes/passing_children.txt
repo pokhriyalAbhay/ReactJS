@@ -1,0 +1,16 @@
+PASSING CHILDREN
+children is a special props for passing element into component
+used for flexible and reusable component design
+common in layout or container component
+
+<container>
+<h1>welcome to my App </h1>
+<p>this content is passed as children to the container component</p>
+</container>
+########
+function container(props)
+{
+    return(
+        <div classname = "container-style>{props.children}</div>
+    )
+}

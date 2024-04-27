@@ -1,0 +1,58 @@
+suppose kaaro hamre aap ke pass data hain or hmme usko kisi component ko pass karana hain jaise man lo ek component hain 
+<app username = "chai"/> ab iski value muje dusre component mai pass karni hain <dashboard title="chai"> ab is mai bhi do component hain 
+left and right or fir right component mai bhi 2 component or hai up and down fir up mai component ek ab hmm aap se kaise bhjenge data up component ko 
+
+
+
+                  <app username = "chai"/> 
+<left username = "chai"/>                        <right username = "chai"/>
+                                                  <up username = "chai"/>
+                                                  <actual passing username = "chai"/> // muje yaha pe pass karni thi value
+
+                                                  <down username = "chai"/>
+muje sirf actual component mai pass karni thi value but maine sab mai kar di unko uski koe need nahi thi isliye kiya ki data
+aage pass hota rehe jisse wo actual component tak puch jaye hmm faltu mai har component mai data handle kar rhe hain 
+iske liye use mai aaye context api 
+
+context api react se bhar exist nahi karta hain 
+yeh problem bus react ki nahi thi yeh vue, backbone.js ke saath bhi thi
+lekin yeh problem react ki nahi hain baki libary ki bhi hain isliye waha REDUX use karte hain 
+state mangement libary=> react-Redux , Reduxtoolkit , zustand
+#######code
+App.jsx
+const FirstName = React.createContext()
+const App()
+{
+    return(
+        <>
+        <FirstName.provider value={"abhay pokhriyal}
+        <Card/>
+        </FirstName.provider>
+        </>
+    )
+}
+export default App;
+export {FirstName};
+############
+Card.jsx
+import {FirstName} from './App.jsx'
+const Card()
+{
+    const fname = useContext(FirstName)
+    return(
+        <>
+        <FirstName.Consumer>
+        {(fname)=>{
+            return <h1> my name is {fname}</h1>
+        }}
+        </FirstName.Consumer>
+        </>
+    )
+    //2nd OPTION 
+    return(
+        <>
+        <h1>my name is {fname}</h1>
+        </>
+    )
+
+}

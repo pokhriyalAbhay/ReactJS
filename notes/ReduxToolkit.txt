@@ -1,0 +1,21 @@
+react ko kam mai lene ke liye React bhi chaiye hota hain or React-dom bhi 
+wese hi Redux ko use mai lene ke liye Redux bhi chaiye hota hain or React-Redux bhi 
+Redux apne app mai ek open libaray hain usko react ke saath connection dena ke liye react-redux mil 
+jata hain 
+--------------------------------------------------------------------------------------------------------------
+context api kaafi baad mai aaya usse phle bhut kuch developer ho gaya tha jaise fulx
+jiska artistructure facebook ne design kiya tha unko bhi state mangement ki dikkat aa rahi thi 
+----------------------------------------------------------------------------------------------------------
+flux ke baad redux aaya redux independent library hain yeh kis bhi framework ke saath chalti hain vue, react
+----------------------------------------------------------------------------------------------------------
+redux ka updated version is redux-toolkit , is battery included matlab hazaar setup karne ki jaurat nahi hain isme built in middleware hain 
+or slicing
+---------------------------------------------------------------------------------------------------------------------
+store = ek global type ka store banayenge or waha se sab chije lenge
+reducers = store mai kuch bhi change karne konsa store mai karna hain auth ka store
+useSelctor = jab koe value select  karni hain store se
+useDispatch = jab koe value bhejni hain
+----------------------------------------------------------------------------------------------------------------------
+useDispatch = dispatch reducers ka use karke store mai changes karte hain
+dispatch ke andar hi reducers likhna padta hain
+useSelctor =

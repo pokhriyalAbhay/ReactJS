@@ -1,0 +1,3 @@
+props tab use karte hain jab ek components jayada baar use karte hain toh same components mai kuch change karne ke
+liye props use karte hian jaise 2 components hain dono ek username tho kisi ka ek ka username change kar sakte
+hain using props
